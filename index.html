@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroConsult Pro</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-green-700 text-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <a href="index.php" class="flex items-center">
+                        <i class="fas fa-leaf text-2xl mr-2"></i>
+                        <span class="font-bold text-xl">AgroConsult Pro</span>
+                    </a>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-white hover:text-green-200">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+
+                <!-- Desktop menu -->
+                <div class="hidden md:flex space-x-4">
+                    <a href="index.php" class="hover:text-green-200 px-3 py-2">Home</a>
+                    <a href="services.php" class="hover:text-green-200 px-3 py-2">Services</a>
+                    <a href="gallery.php" class="hover:text-green-200 px-3 py-2">Gallery</a>
+                    <a href="about.php" class="hover:text-green-200 px-3 py-2">About</a>
+                    <a href="contact.php" class="hover:text-green-200 px-3 py-2">Contact</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="index.php" class="block px-3 py-2 hover:bg-green-600">Home</a>
+                <a href="services.php" class="block px-3 py-2 hover:bg-green-600">Services</a>
+                <a href="gallery.php" class="hover:text-green-200 px-3 py-2">Gallery</a>
+                <a href="about.php" class="block px-3 py-2 hover:bg-green-600">About</a>
+                <a href="contact.php" class="block px-3 py-2 hover:bg-green-600">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <main id="main-content"></main>
+
+    <!-- Footer -->
+    <footer class="bg-green-800 text-white mt-12">
+        <div class="max-w-7xl mx-auto px-4 py-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">AgroConsult Pro</h3>
+                    <p class="text-green-200">Your trusted partner in agricultural success.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact Us</h3>
+                    <p class="text-green-200">
+                        <i class="fas fa-phone mr-2"></i> +233 54 174 9791<br>
+                        <i class="fas fa-envelope mr-2"></i> info@mbgreenagroconsult.com
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Follow Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-green-200 hover:text-white"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-green-200 hover:text-white"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-green-200 hover:text-white"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-8 text-green-200">
+                <p>&copy; 2024 AgroConsult Pro. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 
